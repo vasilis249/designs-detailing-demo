@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Designs Car Wash Detailing — Επαγγελματικό Detailing στις Συκιές, Θεσσαλονίκη</title>
+<meta name="description" content="Λεπτομερής καθαρισμός, γυάλισμα, υδροφοβικό κερί και detailing μοτοσικλέτας στις Συκιές Θεσσαλονίκης. Κλείστε ραντεβού στο 2310 636 736.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoWash",
+  "name": "Designs Car Wash Detailing",
+  "description": "Επαγγελματικό detailing αυτοκινήτου και μοτοσικλέτας στη Θεσσαλονίκη",
+  "telephone": "+302310636736",
+  "email": "nourloglous@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ρήγα Φερραίου 84",
+    "addressLocality": "Συκιές, Θεσσαλονίκη",
+    "postalCode": "566 26",
+    "addressCountry": "GR"
+  },
+  "priceRange": "€€",
+  "areaServed": ["Συκιές","Νεάπολη","Πολίχνη","Σταυρούπολη","Θεσσαλονίκη"]
+}
+</script>
+<style>
+:root{
+  --ink:#13161A;          /* βαμμένο γκραφίτι */
+  --panel:#1B2026;        /* πάνελ αμαξώματος */
+  --line:#2A323B;         /* αρμός πάνελ */
+  --paper:#EDF1F4;        /* φως συνεργείου */
+  --mist:#9AA7B1;         /* δευτερεύον κείμενο */
+  --wax:#E8A33D;          /* κερί carnauba — κύριο accent */
+  --bead:#7CCFDE;         /* υδροφοβική σταγόνα — δευτερεύον accent */
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  font-family:'Commissioner',system-ui,sans-serif;
+  background:var(--ink);
+  color:var(--paper);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* ---------- Demo ribbon ---------- */
+.demo-ribbon{
+  background:var(--wax);color:#1A1304;text-align:center;
+  font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:6px 12px;
+}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(19,22,26,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  max-width:1080px;margin:0 auto;padding:14px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.logo{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.12em;text-transform:uppercase;line-height:1.1}
+.logo small{display:block;font-family:'Commissioner',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.28em;color:var(--wax)}
+.nav-links{display:none;gap:26px;font-size:.88rem;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--mist)}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--paper)}
+.call-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--wax);color:#1A1304;text-decoration:none;
+  font-weight:700;font-size:.9rem;padding:10px 18px;border-radius:999px;
+  transition:transform .15s ease;white-space:nowrap;
+}
+.call-pill:hover,.call-pill:focus-visible{transform:scale(1.04)}
+@media(min-width:760px){.nav-links{display:flex}}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  max-width:1080px;margin:0 auto;padding:56px 20px 40px;
+}
+.hero::before{ /* gloss sweep — η αντανάκλαση πάνω στο φρεσκογυαλισμένο χρώμα */
+  content:"";position:absolute;top:-30%;left:-20%;width:55%;height:160%;
+  background:linear-gradient(105deg,transparent 35%,rgba(124,207,222,.10) 48%,rgba(237,241,244,.16) 52%,rgba(124,207,222,.08) 56%,transparent 68%);
+  transform:rotate(8deg);pointer-events:none;
+  animation:sweep 7s ease-in-out infinite;
+}
+@keyframes sweep{0%,100%{transform:rotate(8deg) translateX(0)}50%{transform:rotate(8deg) translateX(130%)}}
+.eyebrow{
+  display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--bead);margin-bottom:14px;
+}
+h1{
+  font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+  font-size:clamp(2rem,7vw,3.4rem);line-height:1.08;letter-spacing:.015em;max-width:14ch;
+}
+h1 em{font-style:normal;color:var(--wax)}
+.hero p.lede{margin:18px 0 26px;color:var(--mist);max-width:46ch;font-size:1.02rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  font-weight:700;font-size:1rem;padding:15px 26px;border-radius:var(--radius);
+  transition:transform .15s ease;
+}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px)}
+.btn-primary{background:var(--wax);color:#1A1304}
+.btn-ghost{border:1px solid var(--line);color:var(--paper);background:var(--panel)}
+.hero-meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:18px;font-size:.85rem;color:var(--mist)}
+.hero-meta span strong{color:var(--paper);font-weight:600}
+
+/* ---------- Before/After slider (signature) ---------- */
+.ba-wrap{max-width:1080px;margin:0 auto;padding:0 20px 64px}
+.ba-label{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mist);margin-bottom:12px;text-align:center}
+.ba{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  aspect-ratio:16/9;border:1px solid var(--line);user-select:none;touch-action:none;
+}
+.ba-pane{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.ba-before{ /* θαμπό, σκονισμένο χρώμα */
+  background:
+    radial-gradient(120% 90% at 30% 20%, #3A3F45 0%, #24282D 55%, #17191D 100%);
+}
+.ba-after{ /* γυαλισμένο, βαθύ χρώμα με αντανάκλαση */
+  background:
+    linear-gradient(115deg, transparent 42%, rgba(237,241,244,.22) 50%, transparent 58%),
+    radial-gradient(120% 90% at 30% 20%, #2E5A66 0%, #173038 55%, #0D1B20 100%);
+  clip-path:inset(0 0 0 50%);
+}
+.ba-tag{
+  font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  font-size:clamp(.9rem,3vw,1.3rem);color:rgba(237,241,244,.55);
+  border:1px dashed rgba(237,241,244,.3);padding:10px 22px;border-radius:8px;
+}
+.ba-after .ba-tag{color:rgba(237,241,244,.9);border-color:rgba(124,207,222,.5)}
+.ba-handle{
+  position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--wax);
+  cursor:ew-resize;z-index:5;
+}
+.ba-handle::after{
+  content:"↔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:44px;height:44px;border-radius:50%;background:var(--wax);color:#1A1304;
+  display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;
+  box-shadow:0 4px 18px rgba(0,0,0,.45);
+}
+.ba-note{text-align:center;font-size:.8rem;color:var(--mist);margin-top:10px}
+
+/* ---------- Sections ---------- */
+section{max-width:1080px;margin:0 auto;padding:64px 20px}
+.sec-head{margin-bottom:34px}
+.sec-head h2{
+  font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+  font-size:clamp(1.5rem,4.5vw,2.1rem);letter-spacing:.02em;
+}
+.sec-head h2::after{content:"";display:block;width:54px;height:3px;background:var(--wax);margin-top:12px;border-radius:2px}
+.sec-head p{color:var(--mist);margin-top:12px;max-width:60ch}
+
+/* Services */
+.svc-grid{display:grid;gap:16px}
+@media(min-width:680px){.svc-grid{grid-template-columns:1fr 1fr}}
+.svc{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;display:flex;flex-direction:column;gap:10px;
+}
+.svc h3{font-family:'Oswald',sans-serif;font-weight:600;font-size:1.12rem;text-transform:uppercase;letter-spacing:.04em}
+.svc p{color:var(--mist);font-size:.93rem;flex:1}
+.svc .price{font-weight:700;color:var(--bead);font-size:.95rem}
+.svc .price small{color:var(--mist);font-weight:400}
+.svc a{font-size:.88rem;font-weight:600;color:var(--wax);text-decoration:none}
+.svc a:hover{text-decoration:underline}
+.svc.moto{border-color:rgba(124,207,222,.4)}
+.svc.moto h3::after{content:" 🏍";font-size:1rem}
+
+/* Reviews */
+.rev-grid{display:grid;gap:16px}
+@media(min-width:680px){.rev-grid{grid-template-columns:1fr 1fr 1fr}}
+.rev{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
+}
+.rev .stars{color:var(--wax);letter-spacing:.18em;margin-bottom:10px;font-size:.9rem}
+.rev p{font-size:.92rem;color:var(--paper)}
+.rev footer{margin-top:12px;font-size:.8rem;color:var(--mist)}
+
+/* Booking form */
+.book{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px 22px}
+@media(min-width:760px){.book{padding:40px}}
+form{display:grid;gap:14px;margin-top:8px}
+@media(min-width:680px){form{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
+label{font-size:.82rem;font-weight:600;color:var(--mist);display:block;margin-bottom:6px}
+input,select{
+  width:100%;padding:13px 14px;border-radius:10px;border:1px solid var(--line);
+  background:var(--ink);color:var(--paper);font:inherit;font-size:.95rem;
+}
+input:focus-visible,select:focus-visible,.btn:focus-visible,a:focus-visible{outline:2px solid var(--bead);outline-offset:2px}
+button.btn-primary{border:0;cursor:pointer;font:inherit;justify-content:center}
+.form-note{font-size:.78rem;color:var(--mist);grid-column:1/-1}
+.form-ok{display:none;background:rgba(124,207,222,.12);border:1px solid var(--bead);border-radius:10px;padding:14px;grid-column:1/-1;font-size:.92rem}
+
+/* Area / contact */
+.area{display:grid;gap:20px}
+@media(min-width:760px){.area{grid-template-columns:1fr 1fr}}
+.map-ph{
+  border:1px dashed var(--line);border-radius:var(--radius);min-height:240px;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  color:var(--mist);font-size:.88rem;background:repeating-linear-gradient(45deg,var(--panel),var(--panel) 12px,var(--ink) 12px,var(--ink) 24px);
+  padding:20px;
+}
+.contact-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:14px}
+.contact-card div strong{display:block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mist);margin-bottom:3px;font-weight:600}
+.contact-card a{color:var(--wax);text-decoration:none;font-weight:600}
+.contact-card a:hover{text-decoration:underline}
+.areas-line{font-size:.88rem;color:var(--mist)}
+
+/* Footer */
+footer.site{
+  border-top:1px solid var(--line);padding:28px 20px 110px;text-align:center;
+  font-size:.82rem;color:var(--mist);
+}
+footer.site a{color:var(--mist)}
+@media(min-width:760px){footer.site{padding-bottom:34px}}
+
+/* Sticky mobile call bar */
+.callbar{
+  position:fixed;bottom:0;left:0;right:0;z-index:60;
+  display:flex;gap:1px;background:var(--line);
+  box-shadow:0 -6px 24px rgba(0,0,0,.5);
+}
+.callbar a{
+  flex:1;text-align:center;padding:16px 8px;text-decoration:none;
+  font-weight:700;font-size:.95rem;
+}
+.callbar .c1{background:var(--wax);color:#1A1304}
+.callbar .c2{background:var(--panel);color:var(--paper)}
+@media(min-width:760px){.callbar{display:none}}
+</style>
+</head>
+<body>
+
+<div class="demo-ribbon">Demo / Προσχέδιο — οι φωτογραφίες, οι τιμές και οι κριτικές είναι ενδεικτικές</div>
+
+<header>
+  <div class="nav">
+    <div class="logo">Designs<small>Car Wash · Detailing</small></div>
+    <nav class="nav-links" aria-label="Κύριο μενού">
+      <a href="#ypiresies">Υπηρεσίες</a>
+      <a href="#doulies">Δουλειές μας</a>
+      <a href="#rantevou">Ραντεβού</a>
+      <a href="#epikoinonia">Επικοινωνία</a>
+    </nav>
+    <a class="call-pill" href="tel:+302310636736">☎ 2310 636 736</a>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <span class="eyebrow">Συκιές · Θεσσαλονίκη</span>
+  <h1>Το αμάξι σου, <em>σαν να βγήκε</em> απ' την αντιπροσωπεία</h1>
+  <p class="lede">Λεπτομερής καθαρισμός, γυάλισμα και προστασία χρώματος από ανθρώπους που αγαπούν αυτό που κάνουν. Αυτοκίνητα και μοτοσικλέτες, μόνο με ραντεβού.</p>
+  <div class="hero-ctas">
+    <a class="btn btn-primary" href="tel:+302310636736">Κάλεσε τώρα</a>
+    <a class="btn btn-ghost" href="#rantevou">Κλείσε ραντεβού online</a>
+  </div>
+  <div class="hero-meta">
+    <span><strong>Ρήγα Φερραίου 84</strong>, Συκιές</span>
+    <span>Δευτ–Σάβ <strong>09:00–19:00</strong></span>
+    <span>⭐ <strong>100%</strong> θετικές κριτικές</span>
+  </div>
+</div>
+
+<div class="ba-wrap">
+  <p class="ba-label">Σύρε για να δεις τη διαφορά</p>
+  <div class="ba" id="ba" role="slider" aria-label="Σύγκριση πριν και μετά" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+    <div class="ba-pane ba-before"><span class="ba-tag">Φωτογραφία «Πριν»</span></div>
+    <div class="ba-pane ba-after" id="baAfter"><span class="ba-tag">Φωτογραφία «Μετά»</span></div>
+    <div class="ba-handle" id="baHandle"></div>
+  </div>
+  <p class="ba-note">Εδώ μπαίνουν πραγματικές φωτογραφίες από τις δουλειές σας — έχετε ήδη εξαιρετικό υλικό στο Facebook.</p>
+</div>
+
+<section id="ypiresies">
+  <div class="sec-head">
+    <h2>Υπηρεσίες</h2>
+    <p>Οι τιμές είναι ενδεικτικές «από» — διαμορφώνονται ανάλογα με το μέγεθος και την κατάσταση του οχήματος.</p>
+  </div>
+  <div class="svc-grid">
+    <article class="svc">
+      <h3>Λεπτομερής εσωτερικός καθαρισμός</h3>
+      <p>Βιολογικός καθαρισμός σαλονιού, ταπετσαρίες, μοκέτες, αεραγωγοί. Το εσωτερικό όπως την πρώτη μέρα.</p>
+      <span class="price">από €XX <small>/ όχημα</small></span>
+      <a href="#rantevou">Κλείσε ραντεβού →</a>
+    </article>
+    <article class="svc">
+      <h3>Γυάλισμα &amp; κέρωμα</h3>
+      <p>Αφαίρεση θαμπάδας και γρατζουνιών μικροβάθους, επαναφορά βάθους χρώματος, φινίρισμα με κερί.</p>
+      <span class="price">από €XX</span>
+      <a href="#rantevou">Κλείσε ραντεβού →</a>
+    </article>
+    <article class="svc">
+      <h3>Υδροφοβικό κερί &amp; προστασία</h3>
+      <p>Το νερό κυλάει, η βρωμιά δεν «κάθεται». Λάμψη και προστασία που κρατάει μήνες.</p>
+      <span class="price">από €XX</span>
+      <a href="#rantevou">Κλείσε ραντεβού →</a>
+    </article>
+    <article class="svc moto">
+      <h3>Detailing μοτοσικλέτας</h3>
+      <p>Λεπτομερής καθαρισμός, ενυδάτωση άβαφων πλαστικών, υδροφοβικό κερί. Η μηχανή σου σε άλλο επίπεδο.</p>
+      <span class="price">από €XX</span>
+      <a href="#rantevou">Κλείσε ραντεβού →</a>
+    </article>
+  </div>
+</section>
+
+<section id="doulies" aria-label="Κριτικές πελατών">
+  <div class="sec-head">
+    <h2>Τι λένε οι πελάτες μας</h2>
+    <p>Ενδεικτικές κριτικές — στο τελικό site θα μπουν οι πραγματικές σας κριτικές από Facebook και Google.</p>
+  </div>
+  <div class="rev-grid">
+    <article class="rev">
+      <div class="stars" aria-label="5 στα 5 αστέρια">★★★★★</div>
+      <p>«[Εδώ θα μπει πραγματική κριτική πελάτη από τη σελίδα σας στο Facebook.]»</p>
+      <footer>— Πελάτης, Συκιές</footer>
+    </article>
+    <article class="rev">
+      <div class="stars" aria-label="5 στα 5 αστέρια">★★★★★</div>
+      <p>«[Εδώ θα μπει πραγματική κριτική πελάτη από τη σελίδα σας στο Facebook.]»</p>
+      <footer>— Πελάτης, Νεάπολη</footer>
+    </article>
+    <article class="rev">
+      <div class="stars" aria-label="5 στα 5 αστέρια">★★★★★</div>
+      <p>«[Εδώ θα μπει πραγματική κριτική πελάτη από τη σελίδα σας στο Facebook.]»</p>
+      <footer>— Πελάτης, Πολίχνη</footer>
+    </article>
+  </div>
+</section>
+
+<section id="rantevou">
+  <div class="book">
+    <div class="sec-head">
+      <h2>Κλείσε ραντεβού</h2>
+      <p>Συμπλήρωσε τη φόρμα και θα σε καλέσουμε για επιβεβαίωση. Ή πάρε μας κατευθείαν στο <a href="tel:+302310636736" style="color:var(--wax)">2310 636 736</a>.</p>
+    </div>
+    <form id="bookForm" novalidate>
+      <div>
+        <label for="f-name">Ονοματεπώνυμο</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div>
+        <label for="f-phone">Τηλέφωνο</label>
+        <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+      </div>
+      <div>
+        <label for="f-car">Μάρκα / μοντέλο οχήματος</label>
+        <input id="f-car" name="car" type="text" placeholder="π.χ. VW Golf, KTM Duke">
+      </div>
+      <div>
+        <label for="f-svc">Υπηρεσία</label>
+        <select id="f-svc" name="service">
+          <option>Εσωτερικός / βιολογικός καθαρισμός</option>
+          <option>Γυάλισμα &amp; κέρωμα</option>
+          <option>Υδροφοβικό κερί / προστασία</option>
+          <option>Detailing μοτοσικλέτας</option>
+          <option>Δεν είμαι σίγουρος/η — θέλω συμβουλή</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="f-day">Προτιμώμενη μέρα</label>
+        <input id="f-day" name="day" type="text" placeholder="π.χ. Σάββατο πρωί">
+      </div>
+      <p class="form-note">Τα στοιχεία σας χρησιμοποιούνται μόνο για την επικοινωνία σχετικά με το ραντεβού σας και δεν κοινοποιούνται σε τρίτους.</p>
+      <div class="form-ok" id="formOk">✔ Ευχαριστούμε! Θα σας καλέσουμε σύντομα για επιβεβαίωση. <em>(Demo — στη live έκδοση η φόρμα στέλνει το αίτημα στο email σας.)</em></div>
+      <button class="btn btn-primary full" type="submit">Στείλε το αίτημα</button>
+    </form>
+  </div>
+</section>
+
+<section id="epikoinonia">
+  <div class="sec-head"><h2>Πού θα μας βρεις</h2></div>
+  <div class="area">
+    <div class="map-ph">Εδώ μπαίνει διαδραστικός χάρτης Google<br>με την ακριβή τοποθεσία του καταστήματος</div>
+    <div class="contact-card">
+      <div><strong>Διεύθυνση</strong>Ρήγα Φερραίου 84, Συκιές, Θεσσαλονίκη</div>
+      <div><strong>Τηλέφωνο</strong><a href="tel:+302310636736">2310 636 736</a></div>
+      <div><strong>Email</strong><a href="mailto:nourloglous@gmail.com">nourloglous@gmail.com</a></div>
+      <div><strong>Ωράριο</strong>Δευτέρα – Σάββατο, 09:00 – 19:00 <span style="color:var(--mist)">(ενδεικτικό)</span></div>
+      <div><strong>Social</strong><a href="#">Facebook</a> · <a href="#">Instagram</a></div>
+      <p class="areas-line">Εξυπηρετούμε Συκιές, Νεάπολη, Πολίχνη, Σταυρούπολη και όλη τη δυτική Θεσσαλονίκη.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  © 2026 Designs Car Wash Detailing · Ρήγα Φερραίου 84, Συκιές · <a href="#">Πολιτική Απορρήτου</a>
+  <br><span style="font-size:.74rem">Σελίδα προσχέδιο (demo) για παρουσίαση.</span>
+</footer>
+
+<nav class="callbar" aria-label="Γρήγορη επικοινωνία">
+  <a class="c1" href="tel:+302310636736">☎ Κάλεσε τώρα</a>
+  <a class="c2" href="#rantevou">Κλείσε ραντεβού</a>
+</nav>
+
+<script>
+/* Before/After slider */
+(function(){
+  const ba=document.getElementById('ba'),
+        after=document.getElementById('baAfter'),
+        handle=document.getElementById('baHandle');
+  let dragging=false;
+  function setPos(clientX){
+    const r=ba.getBoundingClientRect();
+    let p=((clientX-r.left)/r.width)*100;
+    p=Math.max(4,Math.min(96,p));
+    after.style.clipPath='inset(0 0 0 '+p+'%)';
+    handle.style.left=p+'%';
+    ba.setAttribute('aria-valuenow',Math.round(p));
+  }
+  ba.addEventListener('pointerdown',e=>{dragging=true;setPos(e.clientX);ba.setPointerCapture(e.pointerId)});
+  ba.addEventListener('pointermove',e=>{if(dragging)setPos(e.clientX)});
+  ba.addEventListener('pointerup',()=>dragging=false);
+  ba.addEventListener('keydown',e=>{
+    const now=parseFloat(ba.getAttribute('aria-valuenow'));
+    if(e.key==='ArrowLeft'){setPos(ba.getBoundingClientRect().left+ba.offsetWidth*(now-5)/100);e.preventDefault()}
+    if(e.key==='ArrowRight'){setPos(ba.getBoundingClientRect().left+ba.offsetWidth*(now+5)/100);e.preventDefault()}
+  });
+})();
+
+/* Demo form */
+document.getElementById('bookForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const name=document.getElementById('f-name'),phone=document.getElementById('f-phone');
+  if(!name.value.trim()){name.focus();return}
+  if(!phone.value.trim()){phone.focus();return}
+  document.getElementById('formOk').style.display='block';
+  this.querySelector('button').textContent='Το αίτημα στάλθηκε ✔';
+  this.querySelector('button').disabled=true;
+});
+</script>
+</body>
+</html>
